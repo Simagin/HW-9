@@ -6,7 +6,6 @@ public class ValidNumber {
 
     public void validNumberMethod(String numberText) {
         try {
-
             BufferedReader bis = new BufferedReader(new FileReader(numberText));
             String line = bis.readLine();
             while (line != null) {
@@ -15,7 +14,6 @@ public class ValidNumber {
                     System.out.println(line + "\n");
                 line = bis.readLine();
             }
-
         } catch (
                 IOException e) {
             System.out.printf(e.getMessage());

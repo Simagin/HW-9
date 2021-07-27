@@ -11,7 +11,6 @@ public class UserToJson {
 
         List<People> arrayList = new ArrayList<>();
 
-
         try (BufferedReader br = new BufferedReader(new FileReader(users))) {
             String line = br.readLine();
             String[] arr;
