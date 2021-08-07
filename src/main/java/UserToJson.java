@@ -27,11 +27,12 @@ public class UserToJson {
         } catch (Exception e) {
             System.out.println("========Exception e=========" + e);
         }
+
         try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("file.json"))) {
             Gson gson = new GsonBuilder().setPrettyPrinting().create();
             String json = gson.toJson(arrayList);
             bufferedWriter.write(json);
-                      System.out.println(json);
+            System.out.println(json);
         } catch (IOException e) {
             e.printStackTrace();
         }
